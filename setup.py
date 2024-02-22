@@ -29,15 +29,14 @@ with open('src/oebuild/version.py', 'r', encoding="utf-8") as f:
 version = os.environ.get('OEBUILD_VERSION', __version__)
 
 setuptools.setup(
-    name='oebuild',
+    name='yoctobuild',
     version=version,
-    author='alichinese',
+    author='tangwei55170831',
     author_email='',
     description='',
     long_description=long_description,
-    # http://docutils.sourceforge.net/FAQ.html#what-s-the-official-mime-type-for-restructuredtext-data
     long_description_content_type="text/markdown",
-    url='',
+    url='https://github.com/tangwei55170831/yoctooebuild.git',
     packages=setuptools.find_packages(where='src'),
     package_dir={'': 'src'},
     include_package_data=True,
@@ -61,4 +60,7 @@ setuptools.setup(
     ],
     python_requires='>=3.8',
     entry_points={'console_scripts': ('oebuild = oebuild.app.main:main',)},
+    project_urls={
+        'Source': "https://github.com/tangwei55170831/yoctooebuild.git",
+    },
 )
