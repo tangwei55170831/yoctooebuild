@@ -38,6 +38,7 @@ def mkdirOpeneulerLog(){
 
 def STAGES_RES = []
 
+//pipeline include code check
 pipeline {
     agent { node "${node}" }
     environment {
